@@ -19,6 +19,13 @@ namespace EndlessRunner
             MovesContext movesContext2 = new MovesContext(new Slide());
             movesContext2.executeAction();
 
+            ObstacleFacade obstacleMaker = new ObstacleFacade();
+            obstacleMaker.drawBlueCloud();
+            obstacleMaker.drawGreenTree();
+            obstacleMaker.drawGreyPole();
+            obstacleMaker.drawRedStone();
+            obstacleMaker.drawYellowStone();
+
             Console.ReadKey();
         }
     }
