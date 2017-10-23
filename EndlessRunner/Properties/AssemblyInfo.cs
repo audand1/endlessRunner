@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("EndlessRunner")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Best Console  Game  EVER")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Best Team Ever")]
 [assembly: AssemblyProduct("EndlessRunner")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
