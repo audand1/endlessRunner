@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="AbstractFactory.cs" />
     <Compile Include="Action.cs" />
+    <Compile Include="ActionAdapter.cs" />
     <Compile Include="Apple.cs" />
     <Compile Include="Blue.cs" />
+    <Compile Include="Bonuses.cs" />
     <Compile Include="Cloud.cs" />
     <Compile Include="Color.cs" />
     <Compile Include="ColorFactory.cs" />

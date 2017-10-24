@@ -33,32 +33,32 @@ namespace EndlessRunner
 
         public void drawGreyPole()
         {
-            pole.draw();
             grey.fill();
+            pole.draw();         
         }
 
         public void drawGreenTree()
         {
-            tree.draw();
             green.fill();
+            tree.draw();       
         }
 
         public void drawBlueCloud()
         {
-            cloud.draw();
             blue.fill();
+            cloud.draw();          
         }
 
         public void drawYellowStone()
         {
-            stone.draw();
             yellow.fill();
+            stone.draw();       
         }
 
         public void drawRedStone()
         {
-            stone.draw();
             red.fill();
+            stone.draw();          
         }
 
         public void calculateDIstanceBetweenObstacles() { }

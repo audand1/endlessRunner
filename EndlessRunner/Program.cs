@@ -23,6 +23,11 @@ namespace EndlessRunner
             MovesContext movesContext2 = new MovesContext(new Slide());
             movesContext2.executeAction();
 
+            //adapter
+            MovesContext movesContextAdapter = new MovesContext(new ActionAdapter(new Bonuses()));
+            movesContextAdapter.executeAction();
+
+
             // facade, factory, absract factory
             ObstacleFacade obstacleMaker = new ObstacleFacade();
             obstacleMaker.drawBlueCloud();
@@ -53,6 +58,7 @@ namespace EndlessRunner
             player.add();
 
 
+           
 
             Console.ReadKey();
         }
