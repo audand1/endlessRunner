@@ -8,7 +8,7 @@ namespace EndlessRunner
 {
    public abstract class AbstractFactory
     {
-        abstract Color getColor(string color);
-        abstract Shape getShape(string shape);
+        abstract public Color getColor(string color);
+        abstract public Shape getShape(string shape);
     }
 }

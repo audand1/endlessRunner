@@ -28,6 +28,7 @@ namespace EndlessRunner
             green = new Green();
             grey = new Grey();
             blue = new Blue();
+            yellow = new Yellow();
         }
 
         public void drawGreyPole()

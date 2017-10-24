@@ -14,26 +14,26 @@ namespace EndlessRunner
             {
                 return null;
             }
-            if (string.Equals(shapeType.ToUpper(), 'POLE'))
+            if (string.Equals(shapeType.ToUpper(), "POLE"))
             {
                 return new Pole();
             }
-            else if (string.Equals(shapeType.ToUpper(), 'TREE'))
+            else if (string.Equals(shapeType.ToUpper(), "TREE"))
             {
                 return new Tree();
             }
-            else if (string.Equals(shapeType.ToUpper(), 'CLOUD'))
+            else if (string.Equals(shapeType.ToUpper(), "CLOUD"))
             {
                 return new Cloud();
             }
-            else if (string.Equals(shapeType.ToUpper(), 'STONE'))
+            else if (string.Equals(shapeType.ToUpper(), "STONE"))
             {
                 return new Stone();
             }
             return null;
         }
 
-        override Color getColor(string color)
+       public override Color getColor(string color)
         {
             return null;
         }

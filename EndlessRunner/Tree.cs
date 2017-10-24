@@ -10,7 +10,7 @@ namespace EndlessRunner
     {
         public override void draw()
         {
-            Console.WriteLine('Tree');
+            Console.WriteLine("Tree");
         }
     }
 }

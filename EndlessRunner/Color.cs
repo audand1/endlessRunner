@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace EndlessRunner
 {
-   public class Color
+   public abstract class Color
     {
-        void fill();
+        abstract public void fill();
     }
 }

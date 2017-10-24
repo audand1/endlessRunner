@@ -10,11 +10,11 @@ namespace EndlessRunner
     {
         public static AbstractFactory getFactory(string choice)
         {
-            if (string.Equals(choice.ToLower(), 'shape'))
+            if (string.Equals(choice.ToLower(), "shape"))
             {
                 return new ShapeFactory();
             }
-            else if (string.Equals(choice.ToLower(), 'color'))
+            else if (string.Equals(choice.ToLower(), "color"))
             {
                 return new ColorFactory();
             }

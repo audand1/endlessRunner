@@ -10,7 +10,7 @@ namespace EndlessRunner
     {
         public override void fill()
         {
-            Console.WriteLine('Green');
+            Console.WriteLine("Green");
         }
     }
 }

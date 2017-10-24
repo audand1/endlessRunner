@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace EndlessRunner
 {
-    public class Shape
+    public abstract class Shape
     {
-        void draw();
+       abstract public void draw();
     }
 }

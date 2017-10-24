@@ -13,21 +13,21 @@ namespace EndlessRunner
             return null;
         }
 
-        override Color getColor(string color)
+       public override Color getColor(string color)
         {
             if (color == null)
             {
                 return null;
             }
-            if (string.Equals(color.ToUpper(), 'GREEN'))
+            if (string.Equals(color.ToUpper(), "GREEN"))
             {
                 return new Green();
             }
-            else if (string.Equals(color.ToUpper(), 'YELLOW'))
+            else if (string.Equals(color.ToUpper(), "YELLOW"))
             {
                 return new Yellow();
             }
-            else if (string.Equals(color.ToUpper(), 'RED'))
+            else if (string.Equals(color.ToUpper(), "RED"))
             {
                 return new Red();
             }
