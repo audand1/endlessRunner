@@ -1,0 +1,16 @@
+behavior
+	Strategy
+	
+
+Creational
+
+	Singleton
+	Factory
+	Abstract Factory
+
+
+Structural 
+	Facade
+	Decorator
+	Bridge
+	Adapter
