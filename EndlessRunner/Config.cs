@@ -26,9 +26,11 @@ namespace EndlessRunner
 
        public void readConfigFile()
        {
+           Console.WriteLine("read config file");
        }
        public void writeConfigFile()
        {
+           Console.WriteLine("write config file");
        }
     }
 }

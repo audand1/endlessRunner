@@ -9,10 +9,11 @@ namespace EndlessRunner
     abstract class Stuff
     {
         protected DrawAPI drawAPI;
+        protected Stuff() { }
         protected Stuff(DrawAPI drawAPI)
         {
             this.drawAPI = drawAPI;
         }
-        protected abstract void draw();
+        public abstract void draw();
     }
 }

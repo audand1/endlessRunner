@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace EndlessRunner
 {
-    public class Apple
+     class Apple : Stuff
     {
+      //  DrawAPI drawAPI;
+          
+        public Apple(DrawAPI drawAPI)
+        {
+            this.drawAPI = drawAPI;
+        }
+
+        public override void draw()
+        {
+            drawAPI.putStuff();
+        }
+
     }
 }

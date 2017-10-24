@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace EndlessRunner
 {
-    public class Peach
+     class Peach : Stuff
     {
+       // DrawAPI drawAPI;
+        
+        public Peach(DrawAPI drawAPI)
+        {
+            this.drawAPI = drawAPI;
+        }
+
+        public override void draw()
+        {
+            drawAPI.putStuff();
+        }
     }
 }
