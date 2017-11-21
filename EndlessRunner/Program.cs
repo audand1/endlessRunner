@@ -55,8 +55,10 @@ namespace EndlessRunner
             fastPlayer.add();
             player.add();
 
+            // proxy 
+            Proxy proxy = new Proxy();
+            proxy.insert("High score 1010");
 
-           
 
             Console.ReadKey();
         }
