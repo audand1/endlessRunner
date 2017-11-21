@@ -51,9 +51,7 @@ namespace EndlessRunner
 
             // decorator
             Player player = new Boy();
-
             Player fastPlayer = new FastPlayerDecorator(new Boy());
-
             fastPlayer.add();
             player.add();
 

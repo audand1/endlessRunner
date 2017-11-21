@@ -8,15 +8,15 @@ namespace EndlessRunner
 {
     public class ObstacleFacade
     {
-        private Pole pole;
-        private Tree tree;
-        private Cloud cloud;
-        private Stone stone;
-        private Red red;
-        private Green green;
-        private Yellow yellow;
-        private Grey grey;
-        private Blue blue;
+        private Shape pole;
+        private Shape tree;
+        private Shape cloud;
+        private Shape stone;
+        private Color red;
+        private Color green;
+        private Color yellow;
+        private Color grey;
+        private Color blue;
 
         public ObstacleFacade()
         {
