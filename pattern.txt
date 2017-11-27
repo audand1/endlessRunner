@@ -1,6 +1,7 @@
 behavior
 	Strategy
-	
+	Template Method
+	State
 
 Creational
 
@@ -14,3 +15,5 @@ Structural
 	Decorator
 	Bridge
 	Adapter
+	Proxy
+	Flyweight

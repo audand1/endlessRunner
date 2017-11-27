@@ -55,6 +55,37 @@ namespace EndlessRunner
             fastPlayer.add();
             player.add();
 
+            //template metod 
+            MovesContext movesContextDoubleAction = new MovesContext(new JumpHit());
+            movesContextDoubleAction.executeDoubleAction();
+
+            movesContextDoubleAction = new MovesContext(new SlideHit());
+            movesContextDoubleAction.executeDoubleAction();
+
+
+
+            // state
+            BackgroundContext backgroundContext = new BackgroundContext(new DayTime());
+            backgroundContext.Request();
+            backgroundContext.Request();
+            backgroundContext.Request();
+           
+            //flyweight
+            BackgroundFactory backgroundFactory = new BackgroundFactory();
+            Background background = backgroundFactory.GetBackground("Lake");
+            background.draw();
+            background = backgroundFactory.GetBackground("Grass");
+            background.draw();
+            background = backgroundFactory.GetBackground("Forest");
+            background.draw();
+            // kviecia antra kart
+            background = backgroundFactory.GetBackground("Lake");
+            background.draw();
+            background = backgroundFactory.GetBackground("Grass");
+            background.draw();
+            background = backgroundFactory.GetBackground("Forest");
+            background.draw();
+
             // proxy 
             Proxy proxy = new Proxy();
             proxy.insert("High score 1010");
