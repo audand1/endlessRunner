@@ -50,19 +50,29 @@
     <Compile Include="BackgroundFactory.cs" />
     <Compile Include="Blue.cs" />
     <Compile Include="Bonuses.cs" />
+    <Compile Include="Bot.cs" />
     <Compile Include="Cloud.cs" />
     <Compile Include="Color.cs" />
     <Compile Include="ColorFactory.cs" />
+    <Compile Include="ConcreteMediator.cs" />
     <Compile Include="Config.cs" />
+    <Compile Include="Counter.cs" />
     <Compile Include="DayTime.cs" />
     <Compile Include="DBSubject.cs" />
     <Compile Include="DoubleAction.cs" />
     <Compile Include="FastPlayerDecorator.cs" />
     <Compile Include="Forest.cs" />
+    <Compile Include="GameTaker.cs" />
     <Compile Include="Grass.cs" />
+    <Compile Include="HighScoreHandler.cs" />
+    <Compile Include="Interlocutor.cs" />
     <Compile Include="JumpHit.cs" />
     <Compile Include="Lake.cs" />
+    <Compile Include="Mediator.cs" />
+    <Compile Include="Memento.cs" />
+    <Compile Include="NegativeHandler.cs" />
     <Compile Include="NightTime.cs" />
+    <Compile Include="NumberCounter.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="DrawAPI.cs" />
     <Compile Include="Green.cs" />
@@ -75,7 +85,9 @@
     <Compile Include="ObstacleFactory.cs" />
     <Compile Include="Peach.cs" />
     <Compile Include="PlayerDecorator.cs" />
+    <Compile Include="PlusCounter.cs" />
     <Compile Include="Pole.cs" />
+    <Compile Include="PositiveHandler.cs" />
     <Compile Include="PositiveStuff.cs" />
     <Compile Include="Girl.cs" />
     <Compile Include="Program.cs" />
@@ -92,6 +104,7 @@
     <Compile Include="Stone.cs" />
     <Compile Include="Stuff.cs" />
     <Compile Include="Tree.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="Yellow.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -8,6 +8,8 @@ namespace EndlessRunner
 {
     class Config
     {
+        public int points = 0;
+        public int counter = 0;
         private static Config singletonInstance;
         private Config() {}
 
@@ -22,7 +24,17 @@ namespace EndlessRunner
               return singletonInstance;
           }
        }
-
+ 
+       public Memento CreateMemento()
+       {
+           Console.WriteLine("Saving points...");
+           return (new Memento(points));
+       }
+       public void SetMemento(Memento memento)
+       {
+           Console.WriteLine("Restoring points...");
+           points = memento.GetPoints();
+       }
 
        public void readConfigFile()
        {

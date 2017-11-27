@@ -63,7 +63,6 @@ namespace EndlessRunner
             movesContextDoubleAction.executeDoubleAction();
 
 
-
             // state
             BackgroundContext backgroundContext = new BackgroundContext(new DayTime());
             backgroundContext.Request();
@@ -90,7 +89,51 @@ namespace EndlessRunner
             Proxy proxy = new Proxy();
             proxy.insert("High score 1010");
 
+            // chain of resp.
+            Console.WriteLine("Points at start:" + Config.getInstance.points);
+            HighScoreHandler h1 = new PositiveHandler();
+            HighScoreHandler h2 = new NegativeHandler();        
+            h1.SetSuccessor(h2);
+            int[] requests = { 2, -5, -14, 22, -18, 3, 27, -20, 12, 12, 30 };
+            foreach (int request in requests)
+            {
+                h1.HandleRequest(request);
+            }
+            Console.WriteLine("Final score:" + Config.getInstance.points);
 
+            //memento    
+            Console.WriteLine("Points before saving:" + Config.getInstance.points);
+            GameTaker gameTaker = new GameTaker();
+            gameTaker.Memento = Config.getInstance.CreateMemento();
+            Config.getInstance.points = 100;
+            Console.WriteLine("new points value :" + Config.getInstance.points);
+            Config.getInstance.SetMemento(gameTaker.Memento);
+            Console.WriteLine("Points after restore:" + Config.getInstance.points);
+
+            // interpreter
+            Console.WriteLine("Counter before interpreter:" + Config.getInstance.counter);
+            Counter counter1 = new NumberCounter(Config.getInstance.counter);
+            Counter counter2 = new NumberCounter(5);
+            Counter counter = new PlusCounter(counter1, counter2);
+
+            Config.getInstance.counter = counter.count();
+            Console.WriteLine("Counter after interpreter:" + Config.getInstance.counter);
+
+            //mediator
+            ConcreteMediator mediator = new ConcreteMediator();
+            Bot b = new Bot(mediator);
+            User u = new User(mediator);
+            mediator.SetBot(b);
+            mediator.SetUser(u);
+            string resp = string.Empty;
+            while(!resp.ToLower().Equals("geras"))
+            {
+                b.Send("Kaip tau žaidimas?");
+
+                 resp = Console.ReadLine();
+
+                u.Send(resp);
+            }
             Console.ReadKey();
         }
     }
