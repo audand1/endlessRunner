@@ -72,6 +72,7 @@
     <Compile Include="Memento.cs" />
     <Compile Include="NegativeHandler.cs" />
     <Compile Include="NightTime.cs" />
+    <Compile Include="NullObject.cs" />
     <Compile Include="NumberCounter.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="DrawAPI.cs" />

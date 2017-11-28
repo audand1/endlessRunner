@@ -92,9 +92,11 @@ namespace EndlessRunner
             // chain of resp.
             Console.WriteLine("Points at start:" + Config.getInstance.points);
             HighScoreHandler h1 = new PositiveHandler();
-            HighScoreHandler h2 = new NegativeHandler();        
+            HighScoreHandler h2 = new NegativeHandler();
+            HighScoreHandler h3 = new NullObject();
             h1.SetSuccessor(h2);
-            int[] requests = { 2, -5, -14, 22, -18, 3, 27, -20, 12, 12, 30 };
+            h2.SetSuccessor(h3);
+            int[] requests = { 2, -5, -14, 22, 0, -18, 3, 27, -20, 12, 0, 12, 30 };
             foreach (int request in requests)
             {
                 h1.HandleRequest(request);

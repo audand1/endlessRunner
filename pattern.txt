@@ -4,7 +4,6 @@ behavior
 	State
 
 Creational
-
 	Singleton
 	Factory
 	Abstract Factory
@@ -17,3 +16,7 @@ Structural
 	Adapter
 	Proxy
 	Flyweight
+	Chain of resp.
+	Memento
+	Interpreter
+	Mediator

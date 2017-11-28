@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace EndlessRunner
 {
-    class PositiveHandler : HighScoreHandler
+    class NullObject : HighScoreHandler
     {
         public override void HandleRequest(int request)
         {
-            if (request > 0)
+            if (request == 0)
             {
                 Console.WriteLine("{0} handled request {1}",
                     this.GetType().Name, request);
-                Config.getInstance.points += request;
+               
             }
             else if (successor != null)
             {
